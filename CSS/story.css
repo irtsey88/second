@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.wrap{
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.header{
+  color:#ffffff;
+  font-weight:700;
+  text-align: center;
+  padding:151px 0px;
+}
+.header h1{
+  font-size:40px;
+  padding-bottom:16px;
+}
+.header p{
+  font-size:20px;
+}
+header{
+max-width:1920px;
+height:400px;
+background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+background-size: cover;
+background-position: center;/*相對應置中*/
+justify-content: center;
+align-items: center;
+text-align: center;
+  
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1076px;
+}
+article{
+  margin: 0 auto;
+  width:856px;
+  height: 189px;
+  padding:32px;
+  background: #F5FEE7;
+  text-align:center;
+  justify-content: center;
+  margin-top:64px;
+  margin-bottom:48px;
+  border-radius:16px;
+}
+
+.d-block{
+   display:block;
+}
+
+.lh-12{
+  line-height:1.2;
+}
+
+.article h2{
+  color: #57A203;
+  font-size: 20px;
+  font-weight: 700;
+  padding:10px;
+}
+.style{
+ margin: 0 auto;
+ width: 856px;
+}
+.style h2{
+  padding:24px 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.style h3{
+  color:#57A203;
+  font-weight: 700;
+  font-size: 20px;
+}
+.style p{
+padding:16px 0px;
+}
+.style p,.course li,.idea li,.article p{
+  color:#212529;
+}
+.course label{
+  border-left:1px solid #212529;
+  margin-left:5px;
+  padding-left:5px;
+}
+.course li,.idea li{
+  padding-bottom:4px;
+}
+.course li{
+padding-left:8px;
+list-style:disc inside;
+}
+.idea label{
+  border-left:3px solid #DEE2E6;
+  padding-left:12px
+}
+
+.story a{
+  line-height: 1.5;
+  display: inline-block;
+  color: #3ba000; /* 綠色字體 */
+  text-decoration: none;
+  font-weight:500;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom:4px;
+}
+.story a::after {
+  content: "";
+  position: absolute;
+  left: 20px; /* 調整線的起點位置，避開箭頭 */
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #3ba000; /* 綠色下劃線 */
+}
+.underline {
+  padding-top:24px;
+  padding-bottom:32px;
+  border-bottom:1px solid #dee2e6;
+}
+footer{
+  font-size: 14px;
+  background: #F8F9FA;
+  color:#6C757D;
+  text-align:center;
+  padding:64px 0px;
+  font-size: 14px;
+
+}

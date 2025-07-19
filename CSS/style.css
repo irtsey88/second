@@ -1,0 +1,45 @@
+/*通用樣試*/
+*,*::before *::after{
+    box-sizing: border-box;
+}
+.wrap{
+    margin: 0 auto;
+    width: 640px;
+}
+.mb-24{
+margin-bottom: 24px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.df{
+    display: flex;
+}
+h2{
+font-size: 20px;
+line-height: 1.2;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+img{
+    width: 96px;
+    height: 96px;
+}
+.img img{
+    width: 216px;
+    height: 216px;
+
+}
+
+.text{
+    width: 288px;
+}
+
+.footer{
+    padding: 48px 0px;
+    background-color: brown;
+    text-align: center;
+    color:aliceblue
+}

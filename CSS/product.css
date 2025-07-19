@@ -39,6 +39,15 @@
     border:1px solid var(--neutral-900);
 }
 
+.product-none{
+    display:block;
+    width:160px;
+    pointer-events: none;
+    color:var(--neutral-300);
+    text-align: center;
+     border:1px solid var(--neutral-300);
+}
+
 .product-stock{
     font-size: 14px;
     color:var(--functionalDanger-300);

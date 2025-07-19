@@ -289,8 +289,10 @@ h2 {
 }
 
 img {
-    width: 342.67px;
-    height: 342.67px;
+    /*width: 342.67px;
+    height: 342.67px;*/
+    max-width: 100%;
+
 }
 footer img{
 width: 105px;
