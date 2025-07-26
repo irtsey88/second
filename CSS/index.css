@@ -1,0 +1,60 @@
+/*首頁*/
+.first-img{
+background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true");
+height: 800px; 
+display: flex;
+align-items: center;      /* 垂直置中 */
+justify-content: flex-start; /* 內容靠左 */
+}
+
+.title{
+    padding-top:289px;
+    padding-bottom: 288px;
+    margin-left: 200px;
+}
+
+.card{
+position: relative;
+display:flex;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:var(--primary-100);
+  color: var(--primary-400);
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+} 
+
+.middle-img{
+background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+height: 470px; 
+/*padding: 100px 0px;*/
+display: flex;
+text-align: center;
+align-items: center;      /*垂直置中 */
+justify-content: center; /*內容置中 */
+position:relative;
+}
+
+
+.star-img{
+    position:absolute;
+    width: 48px;
+    top:68px;
+    left: calc(50% - 397px);
+    /*left: 50%;
+    transform: translateX(-397px);
+    這樣可以保證 .star-img 隨畫面寬度自適應 left: 50%，再偏移 -397px，也更穩定。*/
+}
+
+.spark-img{
+    position:absolute;
+    width: 76px;
+    bottom: 132px;
+    right:50%;
+    transform: translateX(+357px)
+}

@@ -5,22 +5,25 @@
 *::after {
     box-sizing: border-box;
 }
+/**{
+    outline:1px solid red;
+}*/
 
 body {
     font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
+    color:var(--neutral-900)
 }
 
 /*通用樣式*/
-/*.wrap{
-    margin: 0auto;
-    max-width: 1920px;
-}*/
 
 .container {
     margin: 0 auto;
-    max-width: 1296px;
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 
@@ -46,16 +49,30 @@ body {
     width: calc(100%/12*2);
 }
 
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*3);
+}
+
 .col-4 {
     padding-left: 12px;
     padding-right: 12px;
     width: calc(100%/12*4);
 }
 
+
+
 .col-5 {
     padding-left: 12px;
     padding-right: 12px;
     width: calc(100%/12*5);
+}
+
+.col-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/ 12 *6 );
 }
 
 .col-7 {
@@ -70,9 +87,81 @@ body {
     width: calc(100%/12*10);
 }
 
+@media(max-width:767px){
+ .row-md{
+    margin-left: -6px;
+    margin-right: -6px;
+ }
+
+ .col-md-1{
+ width: calc(100% / 4);
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+ .col-md-2{
+ width: calc(100% / 4 * 2);
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+ .col-md-3{
+ width: calc(100% / 4 * 3);
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+ .col-md-4{
+ width: calc(100% / 4 * 4);
+ padding-left: 6px;
+ padding-right: 6px;
+
+}
+
+
+
+}
+
+@media(max-width:576px){
+
+
+
+}
+
 .df {
     display: flex;
 }
+
+.d-none{
+    display:none;
+}
+@media(max-width:767px){
+
+.d-md-block{
+ display: block;
+ }
+
+.d-md-none{
+ display: none;
+ }
+}
+
+
+@media(max-width:576px){
+
+.d-sm-block{
+ display: block;
+ }
+
+.d-sm-none{
+ display: none;
+ }
+
+}
+
+
+
+
 
 .fw-wrap {
     flex-wrap: wrap;
@@ -89,6 +178,18 @@ body {
 
 .jc-center {
     justify-content: center;
+}
+.jc-flexstar{
+    justify-content:flex-star;
+}
+
+
+@media(max-width:576px){
+
+ .d-sm-jcflexstar{
+  justify-content:flex-star;
+ }
+
 }
 
 .aic {
@@ -142,6 +243,10 @@ padding: 17px 0px;
     padding: 8px 0;
 }
 
+.py-5{
+    padding: 5px 0;
+}
+
 .p-12 {
     padding: 12px;
 }
@@ -152,6 +257,57 @@ padding: 17px 0px;
 
 .pb-8{
     padding-bottom: 8px;
+}
+
+@media(max-width:767px){
+ .px-mb-32{
+    padding-right: 32px;
+    padding-left: 32px;
+ }
+
+ .py-md-32{
+  padding-top: 32px;
+  padding-bottom: 32px;
+ }
+
+  .py-md-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+ }
+
+ .pb-md-32{
+  padding-bottom: 32px;
+ }
+ 
+ .py-md-8{
+  padding-bottom: 8px;
+
+}
+}
+
+
+@media(max-width:576px){
+ .px-sm-12{
+  padding-right: 12px;
+  padding-right: 12px;
+ }
+
+ .py-sm-12{
+  padding-top: 12px;
+  padding-bottom: 12px;
+ }
+
+ .py-sm-32{
+  padding-top: 32px;
+  padding-bottom: 32px;
+ }
+ .pb-sm-8{
+  padding-bottom: 8px;
+ }
+ .pr-sm-16{
+    padding-right: 16px;
+ }
+
 }
 
 .mr-48 {
@@ -168,6 +324,10 @@ padding: 17px 0px;
 
 .mr-24 {
     margin-right: 24px;
+}
+
+.mr-12{
+    margin-right: 12px;
 }
 
 .mr-8{
@@ -188,6 +348,11 @@ padding: 17px 0px;
 .mb-48 {
     margin-bottom: 48px;
 }
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
 .mb-40{
     margin-bottom: 40px;
 }
@@ -218,6 +383,54 @@ padding: 17px 0px;
     margin:8px 12px;
 }
 
+@media(max-width:767px){
+ .mb-md-0{
+   margin-bottom: 0px; 
+ }
+
+  .mb-md-8{
+   margin-bottom: 8px; 
+ }
+
+  .mb-md-12{
+   margin-bottom: 12px; 
+ }
+
+  .mb-md-16{
+    margin-bottom: 16px;
+ }
+ .mb-md-24{
+    margin-bottom: 24px;
+ }
+ .mb-md-32{
+    margin-bottom: 32px;
+ }
+
+}
+
+
+
+@media(max-width:576px){
+ .mr-sm-0{
+    margin-right:0px;
+ }
+ .mr-sm-16{
+    margin-right:16px;
+ }
+
+ .mb-sm-4{
+    margin-bottom: 4px;
+ }
+ .mb-sm-8{
+    margin-bottom: 8px;
+ }
+
+  .mb-sm-12{
+    margin-bottom: 12px;
+ }
+
+}
+
 
 
 /*標籤樣式*/
@@ -226,11 +439,23 @@ a {
     text-decoration: none;
     color: var(--neutral-900);
 }
-
-h2 {
-    font-weight: 500;
-    color: var(--primary-400);
+.display1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
+.display2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+}
+.h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .h2{
     font-weight: 700;
     font-size: 32px;
@@ -246,7 +471,7 @@ h2 {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 700;
-    color:var(--neutral-900);
+    
 }
 .h5{
     font-size: 20px;
@@ -267,12 +492,11 @@ h2 {
 
 .md-5009{
     font-weight: 500;
-    color: var(--neutral-900);
 }
 
 .md-400 {
     font-weight: 400;
-    color: var(--neutral-900);
+    font-size: 16px;
 }
 .md-N600{
     font-weight: 500;
@@ -282,17 +506,59 @@ h2 {
     font-weight: 400;
     color: var(--neutral-600);
 }
+.lg{
+    font-size: 20px;
+}
+
+@media(max-width:767px){
+ .h3-md{
+    font-size: 28px;
+ }
+ .h4-md{
+    font-size: 24px;
+ }
+
+ .h5-md{
+    font-size: 20px;
+ }
+
+ .h6-md{
+    font-size: 16px;
+ }
+
+}
+
+@media(max-width:576px){
+ .h3-sm{
+    font-size: 28px;
+ }
+  .h4-sm{
+    font-size: 24px;
+ }
+
+  .h5-sm{
+    font-size: 20px;
+ }
+  .h6-sm{
+    font-size: 16px;
+ }
+
+}
+
+
 
 .nav-img{
     width: 105px;
     height: 30px;
 }
 
+
+
 img {
     /*width: 342.67px;
     height: 342.67px;*/
     max-width: 100%;
-
+    height:auto;
 }
 footer img{
 width: 105px;
@@ -301,6 +567,7 @@ height: 30px;
 
 /*顏色設定*/
 :root {
+    --neutral-000: #ffffff;
     --neutral-300: #DEE2E6;
     --primary-400: #57a283;
     --neutral-500:#ADB5BD;
@@ -308,15 +575,32 @@ height: 30px;
     --neutral-900: #212529;
     --primary-300: #C0FA73;
     --primary-200: #E8FEC5;
-    --natural-600: #6C757D;
+    --primary-100: #f5fee7;
+    --natural-900: #6C757D;
     --functionalDanger-300:#D74f4f;
 }
-.c-400{
+.c-p400{
     color:var(--primary-400);
+}
+.c-n900{
+    color:var(--neutral-900);
+}
+.c-n500{
+    color:var(--neutral-500);
 }
 
 
-/*元件*/
+.c-100p{
+    color:var(--primary-100);
+}
+.c-n000{
+    color:var(--neutral-000)
+}
+.c-300p{
+    color:var(--primary-300)
+}
+
+/*麵包屑導覽元件*/
 .slash-item+.slash-item::before {
     content: '/';
     padding: 0px 12px;
@@ -327,6 +611,7 @@ height: 30px;
 .slash-item {
     /*也要同方向的排列*/
     display: flex;
+    font-weight: 500;
 }
 
 .slash-link {
@@ -338,7 +623,21 @@ height: 30px;
     color: var(--primary-400);
 }
 
+@media(max-width:767px){
 
+.slash-item+.slash-item::before {
+padding: 0 8px;
+}
+
+.slash-item {
+font-size: 14px;
+}
+
+
+
+}
+
+/*按鈕設定*/
 .btn {
     border-radius: 4px;
     padding: 12px 24px;
@@ -348,6 +647,16 @@ height: 30px;
     border: none; /*因為通用樣式，先把線條拿掉*/
     background-color: transparent;/*因為通用樣式，所以先設定透明*/
 }
+
+@media(max-width:576px){
+
+.btn{
+    padding: 8px 16px;
+}
+
+
+}
+
 .page .btn{
     padding:8px 15px;
     border-radius: 0px;
@@ -361,14 +670,30 @@ height: 30px;
 .member{
     background-color: var(--primary-200);
 }
+
+
 .b-color{
     background-color: var(--neutral-900);
     color: #ffffff;
 }
+.g-color{
+background-color:var(--primary-300);
+font-weight: 500;
+}
+
+
+
+/*線條樣式*/
 .line{
     border-top: 1px solid var(--neutral-300)
 }
 
 .line-b{
     border-bottom: 1px solid var(--neutral-300)
+}
+
+.banner{
+background-size: cover;
+background-position: center;/*相對應置中*/
+background-repeat: no-repeat;/*不重復*/
 }
