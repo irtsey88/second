@@ -13,6 +13,7 @@ justify-content: flex-start; /* 內容靠左 */
     margin-left: 200px;
 }
 
+
 .card{
 position: relative;
 display:flex;
