@@ -32,7 +32,7 @@
 
 .product-size{
     display:block;
-    max-width:160px;
+    width:160px;
     border:1px solid var(--neutral-300);
     text-align: center;
 }
@@ -43,7 +43,7 @@
 
 .product-none{
     display:block;
-    max-width:160px;
+    width:160px;
     pointer-events: none;
     color:var(--neutral-300);
     text-align: center;
@@ -57,7 +57,7 @@
 
 /*加入收藏+門市試穿*/
 .join-store{
- max-width:259px;
+ width:259px;
  text-align: center;
  border:1px solid var(--neutral-900);
 
